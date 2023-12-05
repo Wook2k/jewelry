@@ -1,0 +1,253 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* CSS 코드에 추가 */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0); /* 배경을 투명하게 설정 */
+    backdrop-filter: blur(10px); /* 배경에 블러 효과 추가 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: background-color 0.3s ease; /* 부드러운 트랜지션 추가 */
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* 부드러운 트랜지션 추가 */
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(255,192,203);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+    color: rgb(248, 180, 255);
+}
+
+.logo img {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    padding: 3px;
+    margin: 0 10px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 3px;
+    position: relative;
+}
+
+#hero {
+    background-image: url('../img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 260px 280px;
+    color: #fff;
+    position: relative;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-top: -10px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main h1:first-child {
+    font-size: 75px;
+    margin-bottom: -10px;
+    white-space: nowrap;
+}
+
+.shop-button {
+    background-color: rgb(255, 192, 223);
+    color: rgb(0, 0, 0);
+    padding: 7px 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.shop-button:hover {
+    background-color: rgb(248, 180, 255);
+}
+
+#featured-products {
+    background-color: #d9ead3;
+}
+
+main h2.section-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main h2.Featured {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 3px;
+}
+
+#popular-products {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -5px;
+    margin-top: 20px;
+}
+
+.product {
+    text-align: center;
+    flex: 0 0 auto;
+    margin-right: 0 5px;
+}
+
+.product img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10px;
+}
+.product .info {
+    padding: 10px;
+}
+
+.product h3 {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.product p.price {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#about-us {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 140px;
+}
+#about-us h2 {
+    font-size: 36px; /* 섹션 제목의 글꼴 크기를 조절합니다. */
+    margin-bottom: 20px;
+}
+/* 푸터 스타일링 */
+.footer {
+    background-color: rgb(255, 192, 223);
+    padding: 40px 0;
+    text-align: left;
+}
+
+/* 푸터 상단 스타일링 */
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* 각 섹션의 리스트 스타일링 */
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list-text {
+    margin: 10px 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #007bff;
+}
+
+/* 푸터 하단 스타일링 */
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 스타일링 */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 소셜 아이콘 스타일링 */
+.social-list {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #007bff;
+}
